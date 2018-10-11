@@ -1,6 +1,7 @@
 require_relative 'models/model_base'
 require_relative 'utils/requestor'
 
+require 'date'
 module CorePro
   class Transaction < Models::ModelBase
     attr_accessor :transactionCount

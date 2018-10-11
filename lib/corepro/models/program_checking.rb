@@ -10,6 +10,7 @@ module CorePro
       end
       attr_accessor :category
       attr_accessor :type
+      attr_accessor :productId
       attr_accessor :balanceLimit
       attr_accessor :interestRates
       attr_accessor :isExternalWithdrawEnabled
