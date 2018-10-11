@@ -21,6 +21,7 @@ module CorePro
     # state related
     attr_accessor :status
     attr_accessor :type
+    attr_accessor :productId
     attr_accessor :createdDate
     attr_accessor :closedDate
     attr_accessor :isPrimary
@@ -64,8 +65,7 @@ module CorePro
     attr_accessor :customField4
     attr_accessor :customField5
 
-    def initialize()
-    end
+    def initialize; end
 
     def self.list(customerId, connection = nil, loggingObject = nil)
       CorePro::Utils::Requestor.get("/account/list/#{customerId}", Account, connection, loggingObject)

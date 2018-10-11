@@ -8,6 +8,7 @@ class AbAccountTest < CoreProTestBase
     a.customerId = @@exampleCustomerId
     a.tag = "act ruby #{@@timestamp}"
     a.type = 'Checking'
+    a.productId = 348741
     a.category = 'CategoryA'
     a.subCategory = 'CategoryB'
     a.isCloseable = true
