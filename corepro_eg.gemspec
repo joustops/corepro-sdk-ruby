@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'corepro/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'corepro'
+  spec.name          = 'corepro_eg'
   spec.version       = CorePro::VERSION
   spec.authors       = ['devsupport']
   spec.email         = ['devsupport@socialmoney.com']
