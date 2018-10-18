@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-# Specify your gem's dependencies in corepro_eg.gemspec
+# Specify your gem's dependencies in corepro.gemspec
 gemspec
 
 # gem 'corepro'
