@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 # Specify your gem's dependencies in corepro_eg.gemspec
 gemspec
 
-# gem 'corepro_eg'
+# gem 'corepro'
 
 group :test do
   if RUBY_PLATFORM =~ /(win32|w32)/
