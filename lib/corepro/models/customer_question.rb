@@ -9,7 +9,6 @@ module CorePro
 
       def from_json! json, classDefs
         classDefs = classDefs || {}
-        classDefs['answers'] = CustomerAnswer
         super json, classDefs
       end
 
