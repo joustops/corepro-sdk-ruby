@@ -6,11 +6,11 @@ require 'corepro/version'
 Gem::Specification.new do |spec|
   spec.name          = 'corepro_eg'
   spec.version       = CorePro::VERSION
-  spec.authors       = ['devsupport']
-  spec.email         = ['devsupport@socialmoney.com']
+  spec.authors       = ['devsupport', 'erendira']
+  spec.email         = ['devsupport@socialmoney.com', 'garciaerendira@gmail.com']
   spec.summary       = %q{A Ruby SDK for consuming the CorePro API.}
   spec.description   = %q{See https://docs.corepro.io for more detail.}
-  spec.homepage      = 'https://github.com/socialmoney/corepro-sdk-ruby'
+  spec.homepage      = 'https://github.com/erendira/corepro-sdk-ruby'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0")
