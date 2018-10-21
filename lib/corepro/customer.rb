@@ -129,8 +129,9 @@ module CorePro
       CorePro::Utils::Requestor.post('/customer/initiate', CorePro::Models::CustomerResponse, self, connection, loggingObject)
     end
 
-    def verify(verificationId, answers, connection = nil, loggingObject = nil)
+    def verify(customerId, verificationId, answers, connection = nil, loggingObject = nil)
       cvr = CorePro::Models::CustomerVerifyRequest.new
+      cvr.customerId = customerId
       cvr.verificationId = verificationId
       cvr.answers = answers
       cvr.verify connection, loggingObject
