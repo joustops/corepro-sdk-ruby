@@ -89,8 +89,9 @@ module CorePro
       aid.accountId
     end
 
-    def close(closeToAccountId, transactionTag, connection = nil, loggingObject = nil)
+    def close(customerId, closeToAccountId, transactionTag, connection = nil, loggingObject = nil)
       ac = CorePro::AccountClose.new
+      ac.customerId = customerId
       ac.closeToAccountId = closeToAccountId
       ac.transactionTag = transactionTag
       ac.close(connection, loggingObject)
