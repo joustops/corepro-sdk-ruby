@@ -6,6 +6,8 @@ module CorePro
 
     attr_accessor :proxyServerName
     attr_accessor :proxyPort
+    attr_accessor :proxyUser
+    attr_accessor :proxyPassword
 
     @@config = begin
       if File.exists?('config.yml')
@@ -30,12 +32,14 @@ module CorePro
       c
     end
 
-    def initialize(apiKey = nil, apiSecret = nil, domainName = nil, proxyServerName = nil, proxyPort = nil)
+    def initialize(apiKey = nil, apiSecret = nil, domainName = nil, proxyServerName = nil, proxyPort = nil, proxyUser = nil, proxyPassword = nil)
       @apiKey = apiKey || @@config['CoreProApiKey']
       @apiSecret = apiSecret || @@config['CoreProApiSecret']
       @domainName = domainName || @@config['CoreProDomainName']
       @proxyServerName = proxyServerName || @@config['CoreProProxyServerName']
       @proxyPort = proxyPort || @@config['CoreProProxyPort']
+      @proxyUser = proxyUser || @@config['CoreProProxyUser']
+      @proxyPassword = proxyPassword || @@config['CoreProProxyPassword']
       @headerValue = ''
     end
 
