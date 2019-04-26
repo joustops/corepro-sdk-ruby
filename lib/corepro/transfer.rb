@@ -10,14 +10,16 @@ module CorePro
     attr_accessor :amount
     attr_accessor :tag
     attr_accessor :transactionId
+    attr_accessor :description
 
-    def self.create(customerId, fromId, toId, amount, tag, connection = nil, loggingObject = nil)
+    def self.create(customerId, fromId, toId, amount, tag, description, connection = nil, loggingObject = nil)
       t = Transfer.new
       t.customerId = customerId
       t.fromId = fromId
       t.toId = toId
       t.amount = amount
       t.tag = tag
+      t.description = description
       t.create connection, loggingObject
     end
 
