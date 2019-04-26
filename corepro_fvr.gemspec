@@ -4,13 +4,13 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'corepro/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'corepro_eg'
+  spec.name          = 'corepro_fvr'
   spec.version       = CorePro::VERSION
-  spec.authors       = ['devsupport', 'erendira']
-  spec.email         = ['devsupport@socialmoney.com', 'garciaerendira@gmail.com']
+  spec.authors       = ['devsupport', 'erendira', 'felipe']
+  spec.email         = ['devsupport@socialmoney.com', 'garciaerendira@gmail.com', 'felipe.vr1591@gmail.com']
   spec.summary       = %q{A Ruby SDK for consuming the CorePro API.}
   spec.description   = %q{See https://docs.corepro.io for more detail.}
-  spec.homepage      = 'https://github.com/erendira/corepro-sdk-ruby'
+  spec.homepage      = 'https://github.com/nixv2/corepro-sdk-ruby'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0")
