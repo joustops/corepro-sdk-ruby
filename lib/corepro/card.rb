@@ -30,6 +30,7 @@ module CorePro
     attr_accessor :lastModifiedDate
     attr_accessor :accounts
     attr_accessor :newPin
+    attr_accessor :birthDate
 
     def self.get(customerId, cardId, connection = nil, loggingObject = nil)
       CorePro::Utils::Requestor.get("/card/get/#{customerId}/#{cardId}", Card, connection, loggingObject)
