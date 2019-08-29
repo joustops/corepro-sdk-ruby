@@ -60,7 +60,9 @@ module CorePro
       CorePro::Utils::Requestor.post('/card/archive', nil, self, connection, loggingObject)
     end
 
-
+    def resetPin(connection = nil, loggingObject = nil)
+      CorePro::Utils::Requestor.post('/card/resetpin', Card, self, connection, loggingObject)
+    end
 
     def addAccount(connection = nil, loggingObject = nil)
       CorePro::Utils::Requestor.post('/card/addAccount', Card, self, connection, loggingObject)
