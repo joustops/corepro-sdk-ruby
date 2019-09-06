@@ -20,6 +20,7 @@ module CorePro
     attr_accessor :primaryAccountId
     attr_accessor :lockTypeCode
     attr_accessor :lockReasonTypeCode
+    attr_accessor :reissueReasonTypeCode
     attr_accessor :createdDate
     attr_accessor :requestedDate
     attr_accessor :verifiedDate
