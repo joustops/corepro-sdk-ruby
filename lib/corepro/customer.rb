@@ -57,6 +57,9 @@ module CorePro
     attr_accessor :accounts
     attr_accessor :externalAccounts
     attr_accessor :cards
+    attr_accessor :fraudStatus
+    attr_accessor :kycStatus
+    attr_accessor :ofacStatus
 
     def from_json! json, classDefs
       classDefs = classDefs || {}
