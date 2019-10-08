@@ -21,22 +21,6 @@ module CorePro
         "<#{self.class}: #{vars}>"
       end
 
-      # Alias camel cased methods with snake case
-      def method_missing(method, *args, &block)
-        return super(method, *args, &block) unless respond_to?(method) # throw NoMethodFound error
-        self.send(camelized_method(method), *args, &block)
-      end
-
-      def respond_to?(method, *args)
-        super(method, *args) || super(camelized_method(method), *args)
-      end
-
-      private
-
-      def camelized_method(method)
-        method.to_s.camelize(:lower).to_sym
-      end
-
     end
   end
 end
